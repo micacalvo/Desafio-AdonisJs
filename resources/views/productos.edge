@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lista de Productos</title>
+</head>
+<body>
+  <section>
+    <ul>
+        @each(producto in productos)
+            <li>Nombre: {{producto.name}} | Precio: {{producto.price}} | Thumbnail: <img src={{producto.thumbnail}} alt="imagen"/></li>
+        @endeach
+    </ul>
+  </section>
+</body>
+</html>
